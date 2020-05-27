@@ -2,8 +2,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+<<<<<<< HEAD
 }
 .status-bar i{
+=======
+>>>>>>> master
     font-size: 14px;
 }
 .status-bar .status-bar__battery-level{
