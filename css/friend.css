@@ -68,6 +68,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+
 }
 .friend__now-listening i{
     font-size: 12px;
