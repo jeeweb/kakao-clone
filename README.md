@@ -1,3 +1,12 @@
 # kakao-clone
- 
-Kakao Desktop App Clone
+ Kakao App Clone
+
+- [] Loading Page
+- [] Sign Up
+- [] Login Page
+- [] Friends List
+- [] Chats List
+- [] Chat Page
+- [] Find Page
+- [] More Page
+- [] Settings Page
