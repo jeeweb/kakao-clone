@@ -1,0 +1,10 @@
+.wrap.loading-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkblue);
+}
+.loading-wrap .logo{
+  color: #fff;
+  font-size: 2em;
+}

@@ -1,9 +1,9 @@
-# kakao-clone
- Kakao App Clone
+# TalkyTalky
+TalkyTalky is a side project cloning Kakao app.
 
-- [ ] Loading Page
-- [ ] Sign Up
+- [x] Loading Page
 - [ ] Login Page
+- [ ] Sign Up
 - [ ] Friends List
 - [ ] Chats List
 - [ ] Chat Page
