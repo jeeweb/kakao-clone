@@ -11,6 +11,7 @@
 @import "screens/login.css";
 
 body {
+  color: #222;
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
 }
@@ -21,12 +22,14 @@ body {
 .logo {
   position:relative;
   font-family: 'Quicksand';
+  color: var(--darkblue);
 }
 .logo::before,
 .logo::after{
   content: '';
   position:absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-14px);
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -53,8 +56,8 @@ body {
     font-size: 14px;
   }
   .wrap {
-    width: 390px;
-    height: 800px;
+    width: 386px;
+    height: 764px;
     border-radius: 24px;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
   }

@@ -5,33 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Kokoa Clone</title>
+  <title>Welcome to TalkyTalky</title>
 </head>
 <body>
-  <div class="status-bar">
-    <div class="status-bar__column">
-      <span>No Service</span>
-      <i class="fas fa-wifi"></i>
+  <div class="wrap login-wrap">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <!-- <span>No Service</span> -->
+        <span>18:43</span>
+      </div>
+      <!-- <div class="status-bar__column"></div> -->
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- <i class="fas fa-bolt"></i> -->
+      </div>
     </div>
-    <div class="status-bar__column">
-      <span>18:43</span>
-    </div>
-    <div class="status-bar__column">
-      <span>11%</span>
-      <i class="fas fa-battery-full fa-lg"></i>
-      <i class="fas fa-bolt"></i>
-    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to <span class="logo">TalkyTalky</span></h1>
+      <p class="welcome-header__text">If you have an Account, log in with you.</p>
+    </header>
+    <form action="friends.html" method="get" id="login-form" class="login-form">
+      <input class="login-form__input" name="username" type="text" placeholder="Email or phone number" />
+      <input class="login-form__input" name="password" type="password" placeholder="password" />
+      <button class="btn btn__login" type="submit">Log In</button>
+      <a href="#" class="login-form__a">Find TalkyTalky Account or Password</a>
+    </form>
   </div>
-  <header class="welcome-header">
-    <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-    <p class="welcome-header__text">If you have a Kokoa Account, log in with you.</p>
-  </header>
-  <form action="friends.html" method="get" id="login-form">
-    <input name="username" type="text" placeholder="Email or phone number" />
-    <input name="password" type="password" placeholder="password" />
-    <input type="submit" value="Log In" />
-    <a href="#">Find Kokoa Account or Password</a>
-  </form>
 
   <script script src="https://kit.fontawesome.com/6478f529f2.js"
   crossorigin="anonymous"></script>
