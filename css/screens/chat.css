@@ -106,6 +106,7 @@
   background-color: #fff;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 0 -4px 24px rgb(0 0 0 / 20%);
 }
 .write-box__form {
   position: relative;
@@ -116,21 +117,24 @@
 }
 .write-box__form button {
   padding: 4px;
-  cursor: pointer;
 }
 .write-box__form .write-box__column{
   flex: 1;
   position: relative;
-}
-.write-box__column input[type="text"] {
-  padding: 10px 14px;
-  width: 100%;
   background-color: var(--lightpurple);
+  padding: 10px 14px;
   border-radius: 16px;
   box-sizing: border-box;
+  width: 100%;
+}
+.write-box__column input[type="text"] {
+  width: 90%;
 }
 .write-box__column .btn__write-emoji {
   position: absolute;
-  top: 3px;
+  top: 5px;
   right: 4px;
+}
+.write-box .btn__write-send {
+  color: var(--purple);
 }

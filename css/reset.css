@@ -141,6 +141,7 @@ button {
   font-family: inherit;
   color: inherit;
   background: none;
+  cursor: pointer;
 }
 img {
   height: 100%;

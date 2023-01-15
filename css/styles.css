@@ -12,6 +12,7 @@
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/chat.css";
+@import "screens/more.css";
 
 html, body{
   height: 100%;
@@ -51,7 +52,7 @@ body {
 }
 .contents {
   height: 100%;
-  padding: 97px 20px 55px 20px;
+  padding: 108px 20px 55px 20px;
   box-sizing: border-box;
   overflow-y: hidden;
 }
