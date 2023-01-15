@@ -12,6 +12,7 @@
 }
 .nav__btn {
   flex: 1;
+  color: var(--darkgray);
   box-sizing: border-box;
 }
 .nav__btn .nav__link {
@@ -25,7 +26,13 @@
   position: relative;
   color: var(--darkblue);
 }
-.nav__btn.nav__btn--on:before{
+.nav__btn.nav__btn--on::before{
   content: '';
-  position:relative;
+  position:absolute;
+  top: 8px;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--purple);
 }
