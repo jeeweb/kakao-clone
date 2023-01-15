@@ -1,9 +1,14 @@
 .status-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 3px;
+  padding: 20px;
   font-size: 0.8em;
+  box-sizing: border-box;
 }
 .status-bar__column:last-child{
   display: flex;

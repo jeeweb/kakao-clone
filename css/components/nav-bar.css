@@ -1,16 +1,31 @@
 .nav {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #f9f9fa;
-  padding: 20px 50px;
   box-sizing: border-box;
-  border-top: 1px solid rgba(121, 121, 121, 0.2);
 }
 .nav__list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.nav__link {
-  color: #2e363e;
+.nav__btn {
+  flex: 1;
+  box-sizing: border-box;
+}
+.nav__btn .nav__link {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.nav__btn.nav__btn--on {
+  position: relative;
+  color: var(--darkblue);
+}
+.nav__btn.nav__btn--on:before{
+  content: '';
+  position:relative;
 }

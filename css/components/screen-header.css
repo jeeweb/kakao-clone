@@ -1,0 +1,22 @@
+.screen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 100%;
+  padding: 8px 20px;
+  box-sizing: border-box; 
+}
+.header__title {
+  font-size: 2em;
+  font-weight: 700;
+}
+.header__util {
+  display: flex;
+  align-items: center;
+}
+.header__btn-util {
+  padding: 6px;
+}

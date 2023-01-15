@@ -1,26 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700?family=Noto+Sans+KR:wght@400;500;700&family=Quicksand:wght@500&display=swap");
 @import "reset.css";
 @import "variables.css";
 
 /* Components */
 @import "components/status-bar.css";
+@import "components/screen-header.css";
 @import "components/nav-bar.css";
 
 /* Screens */
 @import "screens/loading.css";
 @import "screens/login.css";
+@import "screens/friends.css";
+
+html, body{
+  height: 100%;
+}
 
 body {
   color: #222;
   background-color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Noto Sans KR", sans-serif;
 }
 .wrap {
-  padding: 20px;
+  position: relative;
   background-color: #F5F4F9;
+  box-sizing: border-box;
 }
 .logo {
-  position:relative;
+  position: relative;
   font-family: 'Quicksand';
   color: var(--darkblue);
 }
@@ -41,12 +48,21 @@ body {
 .logo::after {
   right: 1px;
 }
+.contents {
+  height: 100%;
+  padding: 97px 20px 55px 20px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+.scroll-wrap {
+  height: 100%;
+  overflow-y: auto;
+}
 
 /*
 ##Device = Laptops, Desktops
-##Screen = B/w 769px to higher resolution desktops
+##Screen = 769px to higher resolution desktops
 ##Device = 데스크탑, 랩탑
-##Screen = 769px 이상 해상도 데스크탑
 */
 @media (min-width: 769px) {
   body{
@@ -56,8 +72,8 @@ body {
     font-size: 14px;
   }
   .wrap {
-    width: 386px;
-    height: 764px;
+    width: 390px;
+    height: 800px;
     border-radius: 24px;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
   }
@@ -68,7 +84,6 @@ body {
 ##Device = Tablets, Ipads (landscape),
 ##Screen = B/w 320px to 768px
 ##Device = 태블릿, 아이패드(세로),대부분의 스마트폰 모바일 기기(세로)
-##Screen = 320px에서 768px 사이
 */
 
 @media (min-width: 320px) and (max-width: 768px) {
