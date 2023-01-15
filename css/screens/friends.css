@@ -76,7 +76,7 @@
 .user-component__time {
   justify-self: end;
   padding-bottom: 26px;
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: var(--darkgray);
 }
 

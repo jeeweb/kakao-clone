@@ -11,6 +11,7 @@
 @import "screens/loading.css";
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/chat.css";
 
 html, body{
   height: 100%;
@@ -59,6 +60,10 @@ body {
   overflow-y: auto;
 }
 
+input::placeholder {
+    color: rgba(34,34,34,0.4);
+  
+}
 /*
 ##Device = Laptops, Desktops
 ##Screen = 769px to higher resolution desktops

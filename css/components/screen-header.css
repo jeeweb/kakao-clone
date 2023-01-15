@@ -16,6 +16,7 @@
 .header__util {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .header__btn-util {
   padding: 6px;

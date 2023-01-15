@@ -1,0 +1,136 @@
+.chatroom-wrap .contents {
+  padding-top: 53px;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 100%;
+  padding: 8px 20px;
+  box-sizing: border-box; 
+  background-color: rgba(245,244,249, 0.85)
+}
+.chat-header > * {
+  width: 33%;
+}
+.chat-header .header__title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.chatroom-wrap .scroll-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  height: calc(100% - 56px);
+}
+.message__timestamp {
+  padding: 4px 8px;
+  color: var(--darkgray);
+  font-size: 0.8em;
+}
+.message-row + .message__timestamp {
+  margin-top: 24px;
+}
+
+.message-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  padding: 8px 0;
+}
+.message-row__you +  .message-row__you, 
+.message-row__me + .message-row__me {
+  padding-top: 0;
+} 
+.message-row__img {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.message-row__img.message-row__img--none {
+  opacity: 0;
+  height: 0;
+}
+
+.message-row .message-row__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.message-row .message-row__msg {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  max-width: 90%;
+}
+
+.message-row .message-box {
+  padding: 10px;
+  color: #fff;
+  background-color: var(--darkgray);
+  border-radius: 10px;
+  line-height: 1.4;
+}
+.message-row .message-row__time {
+  font-size: 0.7em;
+  color: var(--gray);
+}
+
+.message-row.message-row__me {
+  justify-content: flex-end;
+}
+.message-row.message-row__me .message-row__msg {
+  flex-direction: row-reverse;
+}
+.message-row.message-row__me .message-box {
+  background-color: var(--darkblue);
+}
+
+.write-box {
+  position: absolute;
+  bottom: 0;
+  padding: 8px 20px 14px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+.write-box__form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.write-box__form button {
+  padding: 4px;
+  cursor: pointer;
+}
+.write-box__form .write-box__column{
+  flex: 1;
+  position: relative;
+}
+.write-box__column input[type="text"] {
+  padding: 10px 14px;
+  width: 100%;
+  background-color: var(--lightpurple);
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+.write-box__column .btn__write-emoji {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+}
