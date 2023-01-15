@@ -12,6 +12,7 @@
 }
 .nav__btn {
   flex: 1;
+  position: relative;
   color: var(--darkgray);
   box-sizing: border-box;
 }
@@ -23,16 +24,28 @@
   box-sizing: border-box;
 }
 .nav__btn.nav__btn--on {
-  position: relative;
   color: var(--darkblue);
 }
-.nav__btn.nav__btn--on::before{
+.nav__btn.nav__btn--on::before {
   content: '';
   position:absolute;
-  top: 8px;
+  top: 10px;
   left: calc(50% - 2px);
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: var(--purple);
+}
+.nav__btn.nav__btn--msg::after {
+  content: '2';
+  position: absolute;
+  top: 12px;
+  right: calc(50% - 20px);
+  width: 16px;
+  padding: 3px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: var(--yellow);
 }

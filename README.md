@@ -5,7 +5,7 @@ TalkyTalky is a side project cloning Kakao app.
 - [x] Login Page
 - [ ] Sign Up
 - [x] Friends List
-- [ ] Chats List
+- [x] Chats List
 - [ ] Chat Page
 - [ ] Find Page
 - [ ] More Page
