@@ -1,0 +1,26 @@
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.splash-screen {
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkblue);
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.splash-screen .logo{
+  color: #fff;
+  font-size: 2em;
+}

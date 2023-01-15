@@ -1,42 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&family=Quicksand:wght@500&display=swap");
 @import "reset.css";
-@import "status-bar.css";
-@import "header.css";
-@import "nav-bar.css";
-@import "friend.css";
-@import "friends.css";
-@import "find.css";
-@import "more.css";
-@import "settings.css";
-@import "chat.css";
-@import "mobile.css";
+@import "variables.css";
 
-@keyframes fadeIn {
-    from{
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to{
-        opacity: 1;
-        transform: none;
-    }   
+/* Components */
+@import "components/status-bar.css";
+@import "components/screen-header.css";
+@import "components/nav-bar.css";
+
+/* Screens */
+@import "screens/loading.css";
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/chat.css";
+@import "screens/find.css";
+@import "screens/more.css";
+
+html, body{
+  height: 100%;
 }
 
-*{
-    box-sizing: border-box;
+body {
+  color: #222;
+  background-color: #fff;
+  font-family: "Open Sans", "Noto Sans KR", sans-serif;
 }
-body{
-    position: relative;
-    background-color: #fff;
-    padding: 10px 20px;
-    color: #020202;
-    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.wrap {
+  position: relative;
+  background-color: #F5F4F9;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.logo {
+  position: relative;
+  font-family: 'Quicksand';
+  color: var(--darkblue);
+}
+.logo::before,
+.logo::after{
+  content: '';
+  position:absolute;
+  top: 50%;
+  transform: translateY(-14px);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--purple);
+}
+.logo::before {
+  right: 11px;
+}
+.logo::after {
+  right: 1px;
+}
+.contents {
+  height: 100%;
+  padding: 108px 20px 55px 20px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+.scroll-wrap {
+  height: 100%;
+  overflow-y: auto;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+input::placeholder {
+    color: rgba(34,34,34,0.4);
+  
 }
-main{
-    animation: fadeIn .5s ease-in-out;
+/*
+##Device = Laptops, Desktops
+##Screen = 769px to higher resolution desktops
+##Device = 데스크탑, 랩탑
+*/
+@media (min-width: 769px) {
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .wrap {
+    width: 390px;
+    height: 800px;
+    border-radius: 24px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  }
+}
+  
+
+/*
+##Device = Tablets, Ipads (landscape),
+##Screen = B/w 320px to 768px
+##Device = 태블릿, 아이패드(세로),대부분의 스마트폰 모바일 기기(세로)
+*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .wrap{
+    width: 100vw;
+    height: 100vh;
+  }
+
 }
