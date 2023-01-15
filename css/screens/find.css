@@ -1,0 +1,122 @@
+.find-wrap .contents {
+  padding: 97px 0 55px 0;
+}
+.find-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+  border-bottom: 1px solid var(--gray);
+  box-sizing: border-box;
+}
+.find-menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 80px;
+}
+.find-menu__item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+.find-menu__item a i {
+  font-size: 2em;
+}
+.find-menu__item a span {
+  font-size: 0.8em;
+  color: var(--darkgray);
+}
+
+.open-chat {
+  margin: 16px 20px 0 20px;;
+}
+.open-chat .open-chat__tags-title {
+  font-size: 0.8em;
+  color: var(--darkgray);
+}
+.open-chat__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  margin: 16px 0;
+}
+.open-chat__tag button {
+  padding: 4px 8px;
+  font-size: 0.8em;
+  color: var(--darkgray);
+  border: 1px solid var(--gray);
+  border-radius: 13px;
+}
+.open-chat__tag.open-chat__tag--on button {
+  color: #fff;
+  border-color: var(--purple);
+  background-color: var(--purple);
+}
+
+.open-chat__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-color: #fff;;
+  transition: box-shadow 0.4s;
+}
+.open-chat__item:hover {
+  box-shadow: 0 2px 14px rgba(0,0,0,0.15);
+}
+.open-chat__item + .open-chat__item {
+  margin-top: 16px;
+}
+.open-chat__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 74%;
+}
+.open-chat__text .open-chat__title {
+  font-weight: 600;
+}
+.open-chat__text .open-chat__intro {
+  color: var(--darkgray);
+  width: 100%;
+  font-size: 0.8em;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.open-chat__text .open-chat__info {
+  font-size: 0.6em;
+}
+.open-chat__info .open-chat__num {
+  color: var(--gray);
+}
+.open-chat__info .open-chat__active {
+  position:relative;
+  padding-left: 12px;
+  color: var(--purple);
+}
+.open-chat__info .open-chat__active:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  height: 10px;
+  width: 1px;
+  background-color: var(--gray);
+}
+.open-chat__img {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background-color: #fff;
+  overflow: hidden;
+}
