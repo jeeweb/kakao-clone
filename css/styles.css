@@ -28,6 +28,7 @@ body {
   position: relative;
   background-color: #F5F4F9;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .logo {
   position: relative;
