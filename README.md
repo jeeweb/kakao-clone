@@ -1,12 +1,12 @@
 # TalkyTalky
 TalkyTalky is a side project cloning Kakao app.
 
-- [x] Loading Page
+- [x] Splash
 - [x] Login Page
 - [ ] Sign Up
 - [x] Friends List
 - [x] Chats List
 - [x] Chat Page
-- [ ] Find Page
-- [ ] More Page
+- [x] Find Page
+- [x] More Page
 - [ ] Settings Page
