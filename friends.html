@@ -1,173 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="css/styles.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friends - TalkyTalky</title>
-</head>
-<body>
-  <div class="wrap friends-wrap">
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <!-- <span>No Service</span> -->
-        <span>18:43</span>
-      </div>
-      <!-- <div class="status-bar__column"></div> -->
-      <div class="status-bar__column">
-        <i class="fas fa-signal"></i>
-        <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <!-- <i class="fas fa-bolt"></i> -->
-      </div>
-    </div>
-    <header class="screen-header">
-      <h1 class="header__title">Friends</h1>
-      <ul class="header__util">
-        <li>
-          <button type="button" class="header__btn-util btn-util__search">
-            <i class="fas fa-search fa-lg"></i>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="header__btn-util btn-util__add-user">
-            <i class="fas fa-user-plus fa-lg"></i>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="header__btn-util btn-util__music">
-            <i class="fas fa-music fa-lg"></i>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="header__btn-util btn-util__setting">
-            <i class="fas fa-cog fa-lg"></i>
-          </button>
-        </li>
-      </ul>
-    </header>
-    <div class="contents">
-      <div class="scroll-wrap">
-        <div class="screen-top__ad"></div>
-        <div class="user-component user-component__me">
-          <div class="user-component__img">
-            <img src="images/profile-me.jpeg">
-          </div>
-          <div class="user-component__text">
-            <span class="user-component__name">janice</span>
-            <!-- <span class="user-component__profile"></span> -->
-          </div>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - TalkyTalky</title>
+  </head>
+  <body>
+    <div class="wrap friends-wrap">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <!-- <span>No Service</span> -->
+          <span>18:43</span>
         </div>
-        <section class="friends-section friends-section__channel">
-          <span class="friends-section__category">채널</span>
-          <!-- <button type="button" class="btn__accordion">
+        <!-- <div class="status-bar__column"></div> -->
+        <div class="status-bar__column">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full fa-lg"></i>
+          <!-- <i class="fas fa-bolt"></i> -->
+        </div>
+      </div>
+      <header class="screen-header">
+        <h1 class="header__title">Friends</h1>
+        <ul class="header__util">
+          <li>
+            <button type="button" class="header__btn-util btn-util__search">
+              <i class="fas fa-search fa-lg"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header__btn-util btn-util__add-user">
+              <i class="fas fa-user-plus fa-lg"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header__btn-util btn-util__music">
+              <i class="fas fa-music fa-lg"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header__btn-util btn-util__setting">
+              <i class="fas fa-cog fa-lg"></i>
+            </button>
+          </li>
+        </ul>
+      </header>
+      <div class="contents">
+        <div class="scroll-wrap">
+          <div class="screen-top__ad"></div>
+          <div class="user-component user-component__me">
+            <div class="user-component__img">
+              <img src="images/profile-me.jpeg" />
+            </div>
+            <div class="user-component__text">
+              <span class="user-component__name">janice</span>
+              <!-- <span class="user-component__profile"></span> -->
+            </div>
+          </div>
+          <section class="friends-section friends-section__bday">
+            <span class="friends-section__category">생일인 친구</span>
+            <!-- <button type="button" class="btn__accordion">
+            <span class="friends-section__category">생일인 친구</span>
+            <i class="fas fa-chevron-down"></i>
+          </button> -->
+            <div class="user-component user-component__bday">
+              <div class="user-component__img">
+                <img src="images/coffee.jpg" />
+              </div>
+              <div class="user-component__text">
+                <span class="user-component__name">
+                  Hoon
+                  <img src="images/icon-birthday.png" class="icon__bday" />
+                </span>
+              </div>
+              <div class="user-component__gift">
+                <span>선물하기</span>
+                <i class="fab fa-gratipay"></i>
+              </div>
+            </div>
+          </section>
+          <section class="friends-section friends-section__channel">
+            <span class="friends-section__category">채널</span>
+            <!-- <button type="button" class="btn__accordion">
             <span class="friends-section__category">채널</span>
             <i class="fas fa-chevron-down"></i>
           </button> -->
-          <div class="user-component user-component__channel">
-            <div class="user-component__img">
-              <span>Ch</span>
+            <div class="user-component user-component__channel">
+              <div class="user-component__img">
+                <span>Ch</span>
+              </div>
+              <div class="user-component__text">
+                <span class="user-component__name">채널</span>
+              </div>
             </div>
-            <div class="user-component__text">
-              <span class="user-component__name">채널</span>
-            </div>
-          </div>
-        </section>
-        <section class="friends-section friends-section__friends">
-          <span class="friends-section__category">친구 5</span>
-          <!-- <button type="button" class="btn__accordion">
+          </section>
+          <section class="friends-section friends-section__friends">
+            <span class="friends-section__category">친구 5</span>
+            <!-- <button type="button" class="btn__accordion">
             <span class="friends-section__category">친구 5</span>
             <i class="fas fa-chevron-down"></i>
           </button> -->
-          <ul class="friends__list">
-            <li class="friends__item">
-              <div class="user-component">
-                <div class="user-component__img">
-                  <img src="images/221112.jpeg" style="width:140%;height:auto;margin-top:-30px;">
-                </div>
-                <div class="user-component__text">
-                  <span class="user-component__name">Dennis</span>
-                  <!-- <span class="user-component__profile"></span> -->
-                </div>
-              </div>
-            </li>
-            <li class="friends__item">
-              <div class="user-component">
-                <div class="user-component__img">
-                  <img src="images/effeil.jpg" style="margin-left:-8px;">
-                </div>
-                <div class="user-component__text">
-                  <span class="user-component__name">Jane</span>
-                  <span class="user-component__profile">중요한 일은 전화주세요📞</span>
-                </div>
-              </div>
-            </li>
-            <li class="friends__item">
-              <div class="user-component">
-                <div class="user-component__img">
-                  <img src="images/jaco.jpeg">
-                </div>
-                <div class="user-component__text">
-                  <span class="user-component__name">Jacobo</span>
-                  <span class="user-component__profile">JACO ONYX</span>
-                </div>
-                <div class="user-component__music">
-                  <div>
-                    <span>I was lost(Feat. Joele) - JACO ONYX</span>
+            <ul class="friends__list">
+              <li class="friends__item">
+                <div class="user-component">
+                  <div class="user-component__img">
+                    <img
+                      src="images/221112.jpeg"
+                      style="width: 140%; height: auto; margin-top: -30px"
+                    />
                   </div>
-                  <i class="far fa-play-circle"></i>
+                  <div class="user-component__text">
+                    <span class="user-component__name">Dennis</span>
+                    <!-- <span class="user-component__profile"></span> -->
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="friends__item">
-              <div class="user-component">
-                <div class="user-component__img">
-                  <img src="images/coffee.jpg">
+              </li>
+              <li class="friends__item">
+                <div class="user-component">
+                  <div class="user-component__img">
+                    <img src="images/effeil.jpg" style="margin-left: -8px" />
+                  </div>
+                  <div class="user-component__text">
+                    <span class="user-component__name">Jane</span>
+                    <span class="user-component__profile"
+                      >중요한 일은 전화주세요📞</span
+                    >
+                  </div>
                 </div>
-                <div class="user-component__text">
-                  <span class="user-component__name">Hoon</span>
-                  <!-- <span class="user-component__profile"></span> -->
+              </li>
+              <li class="friends__item">
+                <div class="user-component">
+                  <div class="user-component__img">
+                    <img src="images/jaco.jpeg" />
+                  </div>
+                  <div class="user-component__text">
+                    <span class="user-component__name">Jacobo</span>
+                    <span class="user-component__profile">JACO ONYX</span>
+                  </div>
+                  <div class="user-component__music">
+                    <div>
+                      <span>I was lost(Feat. Joele) - JACO ONYX</span>
+                    </div>
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="friends__item">
-              <div class="user-component">
-                <div class="user-component__img">
-                  <img src="images/snow.jpg" style="width:140%;height:auto;margin-top:-30px;">
+              </li>
+              <li class="friends__item">
+                <div class="user-component">
+                  <div class="user-component__img">
+                    <img src="images/coffee.jpg" />
+                  </div>
+                  <div class="user-component__text">
+                    <span class="user-component__name">Hoon</span>
+                    <!-- <span class="user-component__profile"></span> -->
+                  </div>
                 </div>
-                <div class="user-component__text">
-                  <span class="user-component__name">Angela</span>
-                  <span class="user-component__profile">Snow❄️</span>
+              </li>
+              <li class="friends__item">
+                <div class="user-component">
+                  <div class="user-component__img">
+                    <img
+                      src="images/snow.jpg"
+                      style="width: 140%; height: auto; margin-top: -30px"
+                    />
+                  </div>
+                  <div class="user-component__text">
+                    <span class="user-component__name">Angela</span>
+                    <span class="user-component__profile">Snow❄️</span>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </section>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__btn nav__btn--on">
+            <a class="nav__link" href="friends.html"
+              ><i class="fas fa-user fa-lg"></i
+            ></a>
+          </li>
+          <li class="nav__btn nav__btn--msg">
+            <a class="nav__link" href="chats.html"
+              ><i class="fas fa-comment fa-lg"></i
+            ></a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="find.html"
+              ><i class="fas fa-search fa-lg"></i
+            ></a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="more.html"
+              ><i class="fas fa-ellipsis-h fa-lg"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="splash-screen">
+        <h1 class="logo">TalkyTalky</h1>
       </div>
     </div>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn nav__btn--on">
-          <a class="nav__link" href="friends.html"><i class="fas fa-user fa-lg"></i></a>
-        </li>
-        <li class="nav__btn nav__btn--msg">
-          <a class="nav__link" href="chats.html"><i class="fas fa-comment fa-lg"></i></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"><i class="fas fa-search fa-lg"></i></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-lg"></i></a>
-        </li>
-      </ul>
-    </nav>  
-    <div class="splash-screen">
-      <h1 class="logo">TalkyTalky</h1>
-    </div>
-  </div>
 
-  <script script src="https://kit.fontawesome.com/6478f529f2.js"
-  crossorigin="anonymous"></script>
-</body>
+    <script
+      script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
