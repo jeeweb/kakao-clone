@@ -1,7 +1,7 @@
 @keyframes fadeIn {
   0% {
     opacity: 1;
-  } 
+  }
   20% {
     opacity: 1;
   }
@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.wallet-box__header .btn__wallet{
+.wallet-box__header .btn__wallet {
   font-size: 1.2em;
   font-weight: 500;
 }
@@ -95,10 +95,10 @@
   width: 25%;
   height: 80px;
 }
-.more-menu__item a{
+.more-menu__item a {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   gap: 16px;
   width: 100%;
 }
@@ -108,4 +108,27 @@
 .more-menu__item a span {
   font-size: 0.8em;
   color: var(--darkgray);
+}
+.more-info {
+  margin: 16px 20px;
+}
+.more-info__info {
+  position: relative;
+  height: 200px;
+  background-color: #dbe5ec;
+  border-radius: 8px;
+}
+.more-info__img img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 100px;
+}
+.more-info__text {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.3;
 }
