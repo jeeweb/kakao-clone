@@ -87,7 +87,14 @@
   font-size: 0.7em;
   color: var(--darkgray);
 }
-
+.user-component__friends-bday .user-component__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: var(--purple);
+  font-size: 1.2em;
+}
 .user-component__channel .user-component__img {
   display: flex;
   align-items: center;
