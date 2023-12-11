@@ -1,193 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="css/styles.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat w/Jane - TalkyTalky</title>
-</head>
-<body>
-  <div class="wrap chatroom-wrap">
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <!-- <span>No Service</span> -->
-        <span>18:43</span>
-      </div>
-      <!-- <div class="status-bar__column"></div> -->
-      <div class="status-bar__column">
-        <i class="fas fa-signal"></i>
-        <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <!-- <i class="fas fa-bolt"></i> -->
-      </div>
-    </div>
-    <div class="contents">
-      <header class="chat-header">
-        <a href="chats.html">
-          <i class="fas fa-arrow-left fa-lg"></i>
-        </a>
-        <h1 class="header__title">Jane</h1>
-        <ul class="header__util">
-          <li>
-            <button type="button" class="header__btn-util btn-util__search">
-              <i class="fas fa-search fa-lg"></i>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="header__btn-util btn-util__menu">
-              <i class="fas fa-bars fa-lg"></i>
-            </button>
-          </li>
-        </ul>
-      </header>
-      <div class="scroll-wrap">
-        <div class="message__timestamp">
-          <span>2023년 1월 12일</span>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/Jane - TalkyTalky</title>
+  </head>
+  <body>
+    <div class="wrap chatroom-wrap">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <!-- <span>No Service</span> -->
+          <span>18:43</span>
         </div>
-        <div class="message-row message-row__me">
-          <div class="message-row__msg">
-            <div class="message-box">
-              <span>퇴근함?</span>
-            </div>
-            <span class="message-row__time">18:00</span>
-          </div>
-        </div>
-        <div class="message-row message-row__you">
-          <div class="message-row__img">
-            <img src="images/effeil.jpg" style="margin-left:-8px;">
-          </div>
-          <div class="message-row__text">
-            <span class="user-component__name">Jane</span>
-            <div class="message-row__msg">
-              <div class="message-box">
-                <span>지금 하는 것만 마무리하고 퇴근하려구</span>
-              </div>
-              <span class="message-row__time">18:02</span>
-            </div>
-          </div>
-        </div>
-        <div class="message-row message-row__me">
-          <div class="message-row__msg">
-            <div class="message-box">
-              <span>내일 저녁 곱창 어때?</span>
-            </div>
-            <span class="message-row__time">18:12</span>
-          </div>
-        </div>
-        <div class="message-row message-row__you">
-          <div class="message-row__img">
-            <img src="images/effeil.jpg" style="margin-left:-8px;">
-          </div>
-          <div class="message-row__text">
-            <span class="user-component__name">Jane</span>
-            <div class="message-row__msg">
-              <div class="message-box">
-                <span>ㅋㅋ 저번에 얘기한 거기 가자 왕십리</span>
-              </div>
-              <span class="message-row__time">18:13</span>
-            </div>
-          </div>
-        </div>
-        <div class="message-row message-row__you">
-          <div class="message-row__img message-row__img--none">
-            <img src="images/effeil.jpg" style="margin-left:-8px;">
-          </div>
-          <div class="message-row__text">
-            <div class="message-row__msg">
-              <div class="message-box">
-                <span>내가 먼저 가서 웨이팅 하고 있을께</span>
-              </div>
-              <span class="message-row__time">18:14</span>
-            </div>
-          </div>
-        </div>
-        <div class="message-row message-row__me">
-          <div class="message-row__msg">
-            <div class="message-box">
-              <span>ㅇㅋ👌</span>
-            </div>
-            <span class="message-row__time">18:18</span>
-          </div>
-        </div>
-        <div class="message-row message-row__me">
-          <div class="message-row__msg">
-            <div class="message-box">
-              <span>ㅋㅋㅋ내일봐</span>
-            </div>
-            <span class="message-row__time">18:18</span>
-          </div>
-        </div>
-        <div class="message__timestamp">
-          <span>2023년 1월 13일</span>
-        </div>
-        <div class="message-row message-row__you">
-          <div class="message-row__img">
-            <img src="images/effeil.jpg" style="margin-left:-8px;">
-          </div>
-          <div class="message-row__text">
-            <span class="user-component__name">Jane</span>
-            <div class="message-row__msg">
-              <div class="message-box">
-                <span>사람 너무 많아ㅠㅠㅠ</span>
-              </div>
-              <span class="message-row__time">18:40</span>
-            </div>
-          </div>
-        </div>
-        <div class="message-row message-row__me">
-          <div class="message-row__msg">
-            <div class="message-box">
-              <span>ㅋㅋㅋㅋ 조금만 기다려 나 금방 도착해</span>
-            </div>
-            <span class="message-row__time">18:42</span>
-          </div>
-        </div>
-        <div class="message-row message-row__me">
-          <div class="message-row__msg">
-            <div class="message-box">
-              <span>혹시 모르니까 다른데도 찾아보자 일단 웨이팅 걸어놔ㅋㅋㅋㅋㅋㅋ</span>
-            </div>
-            <span class="message-row__time">18:43</span>
-          </div>
-        </div>
-        <div class="message__timestamp">
-          <span>2023년 1월 15일</span>
-        </div>
-        <div class="message-row message-row__you">
-          <div class="message-row__img">
-            <img src="images/effeil.jpg" style="margin-left:-8px;">
-          </div>
-          <div class="message-row__text">
-            <span class="user-component__name">Jane</span>
-            <div class="message-row__msg">
-              <div class="message-box">
-                <span>ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
-              </div>
-              <span class="message-row__time">17:45</span>
-            </div>
-          </div>
+        <!-- <div class="status-bar__column"></div> -->
+        <div class="status-bar__column">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full fa-lg"></i>
+          <!-- <i class="fas fa-bolt"></i> -->
         </div>
       </div>
-    </div>
-    <div class="write-box">
-      <form class="write-box__form">
-        <button type="button" class="btn__write-option">
-          <i class="fas fa-plus"></i>
-        </button>
-        <div class="write-box__column">
-          <input type="text" placeholder="메세지를 입력하세요">
-          <button type="button" class="btn__write-emoji">
-            <i class="far fa-smile fa-lg"></i>
+      <div class="contents">
+        <header class="chat-header">
+          <a href="chats.html">
+            <i class="fas fa-arrow-left fa-lg"></i>
+          </a>
+          <h1 class="header__title">Jane</h1>
+          <ul class="header__util">
+            <li>
+              <button type="button" class="header__btn-util btn-util__search">
+                <i class="fas fa-search fa-lg"></i>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="header__btn-util btn-util__menu">
+                <i class="fas fa-bars fa-lg"></i>
+              </button>
+            </li>
+          </ul>
+        </header>
+        <div class="scroll-wrap">
+          <div class="message__timestamp">
+            <span>2023년 1월 12일</span>
+          </div>
+          <div class="message-row message-row__me">
+            <div class="message-row__msg">
+              <div class="message-box">
+                <span>퇴근함?</span>
+              </div>
+              <span class="message-row__time">18:00</span>
+            </div>
+          </div>
+          <div class="message-row message-row__you">
+            <div class="message-row__img">
+              <img src="images/effeil.jpg" style="margin-left: -8px" />
+            </div>
+            <div class="message-row__text">
+              <span class="user-component__name">Jane</span>
+              <div class="message-row__msg">
+                <div class="message-box">
+                  <span>지금 하는 것만 마무리하고 퇴근하려구</span>
+                </div>
+                <span class="message-row__time">18:02</span>
+              </div>
+            </div>
+          </div>
+          <div class="message-row message-row__me">
+            <div class="message-row__msg">
+              <div class="message-box">
+                <span>내일 저녁 곱창 어때?</span>
+              </div>
+              <span class="message-row__time">18:12</span>
+            </div>
+          </div>
+          <div class="message-row message-row__you">
+            <div class="message-row__img">
+              <img src="images/effeil.jpg" style="margin-left: -8px" />
+            </div>
+            <div class="message-row__text">
+              <span class="user-component__name">Jane</span>
+              <div class="message-row__msg">
+                <div class="message-box">
+                  <span>ㅋㅋ 저번에 얘기한 거기 가자 왕십리</span>
+                </div>
+                <span class="message-row__time">18:13</span>
+              </div>
+            </div>
+          </div>
+          <div class="message-row message-row__you">
+            <div class="message-row__img message-row__img--none">
+              <img src="images/effeil.jpg" style="margin-left: -8px" />
+            </div>
+            <div class="message-row__text">
+              <div class="message-row__msg">
+                <div class="message-box">
+                  <span>내가 먼저 가서 웨이팅 하고 있을께</span>
+                </div>
+                <span class="message-row__time">18:14</span>
+              </div>
+            </div>
+          </div>
+          <div class="message-row message-row__me">
+            <div class="message-row__msg">
+              <div class="message-box">
+                <span>ㅇㅋ👌</span>
+              </div>
+              <span class="message-row__time">18:18</span>
+            </div>
+          </div>
+          <div class="message-row message-row__me">
+            <div class="message-row__msg">
+              <div class="message-box">
+                <span>ㅋㅋㅋ내일봐</span>
+              </div>
+              <span class="message-row__time">18:18</span>
+            </div>
+          </div>
+          <div class="message__timestamp">
+            <span>2023년 1월 13일</span>
+          </div>
+          <div class="message-row message-row__you">
+            <div class="message-row__img">
+              <img src="images/effeil.jpg" style="margin-left: -8px" />
+            </div>
+            <div class="message-row__text">
+              <span class="user-component__name">Jane</span>
+              <div class="message-row__msg">
+                <div class="message-box">
+                  <span>사람 너무 많아ㅠㅠㅠ</span>
+                </div>
+                <span class="message-row__time">18:40</span>
+              </div>
+            </div>
+          </div>
+          <div class="message-row message-row__me">
+            <div class="message-row__msg">
+              <div class="message-box">
+                <span>ㅋㅋㅋㅋ 조금만 기다려 나 금방 도착해</span>
+              </div>
+              <span class="message-row__time">18:42</span>
+            </div>
+          </div>
+          <div class="message-row message-row__me">
+            <div class="message-row__msg">
+              <div class="message-box">
+                <span
+                  >혹시 모르니까 다른데도 찾아보자 일단 웨이팅
+                  걸어놔ㅋㅋㅋㅋㅋㅋ</span
+                >
+              </div>
+              <span class="message-row__time">18:43</span>
+            </div>
+          </div>
+          <div class="message__timestamp">
+            <span>2023년 1월 15일</span>
+          </div>
+          <div class="message-row message-row__you">
+            <div class="message-row__img">
+              <img src="images/effeil.jpg" style="margin-left: -8px" />
+            </div>
+            <div class="message-row__text">
+              <span class="user-component__name">Jane</span>
+              <div class="message-row__msg">
+                <div class="message-box">
+                  <span>ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+                </div>
+                <span class="message-row__time">17:45</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="write-box">
+        <form class="write-box__form">
+          <button type="button" class="btn__write-option">
+            <i class="fas fa-plus"></i>
           </button>
-        </div>
-        <button type="submit" class="btn__write-send">
-          <i class="fas fa-paper-plane"></i>
-        </button>
-      </form>
+          <div class="write-box__column">
+            <input type="text" placeholder="메세지를 입력하세요" />
+            <button type="button" class="btn__write-emoji">
+              <i class="far fa-smile fa-lg"></i>
+            </button>
+          </div>
+          <button type="submit" class="btn__write-send">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
-  <script script src="https://kit.fontawesome.com/6478f529f2.js"
-  crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/642e975ea7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

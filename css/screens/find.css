@@ -32,7 +32,7 @@
 }
 
 .open-chat {
-  margin: 16px 20px 0 20px;;
+  margin: 16px 20px 0 20px;
 }
 .open-chat .open-chat__tags-title {
   font-size: 0.8em;
@@ -65,11 +65,11 @@
   gap: 16px;
   padding: 8px 16px;
   border-radius: 10px;
-  background-color: #fff;;
+  background-color: #fff;
   transition: box-shadow 0.4s;
 }
 .open-chat__item:hover {
-  box-shadow: 0 2px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.15);
 }
 .open-chat__item + .open-chat__item {
   margin-top: 16px;
@@ -99,12 +99,12 @@
   color: var(--gray);
 }
 .open-chat__info .open-chat__active {
-  position:relative;
+  position: relative;
   padding-left: 12px;
   color: var(--purple);
 }
 .open-chat__info .open-chat__active:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 5px;
   top: 2px;
