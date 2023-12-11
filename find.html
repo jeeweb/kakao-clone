@@ -1,153 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="css/styles.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find - TalkyTalky</title>
-</head>
-<body>
-  <div class="wrap find-wrap">
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <!-- <span>No Service</span> -->
-        <span>18:43</span>
-      </div>
-      <!-- <div class="status-bar__column"></div> -->
-      <div class="status-bar__column">
-        <i class="fas fa-signal"></i>
-        <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <!-- <i class="fas fa-bolt"></i> -->
-      </div>
-    </div>
-    <header class="screen-header">
-      <h1 class="header__title">Find</h1>
-      <ul class="header__util">
-        <li>
-          <button type="button" class="header__btn-util btn-util__search">
-            <i class="fas fa-search fa-lg"></i>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="header__btn-util btn-util__setting">
-            <i class="fas fa-cog fa-lg"></i>
-          </button>
-        </li>
-      </ul>
-    </header>
-    <div class="contents">
-      <div class="scroll-wrap">
-        <ul class="find-menu">
-          <li class="find-menu__item">
-            <a href="#">
-              <i class="fas fa-qrcode fa-lg"></i>
-              <span>QR Code</span>
-            </a>
-          </li>
-          <li class="find-menu__item">
-            <a href="#">
-              <i class="far fa-address-book fa-lg"></i>
-              <span>Add by Contacts</span>
-            </a>
-          </li>
-          <li class="find-menu__item">
-            <a href="#">
-              <i class="fas fa-fingerprint fa-lg"></i>
-              <span>Add by ID</span>
-            </a>
-          </li>
-          <li class="find-menu__item">
-            <a href="#">
-              <i class="far fa-envelope fa-lg"></i>
-              <span>Invite</span>
-            </a>
-          </li>
-        </ul>
-        <div class="open-chat">
-          <span class="open-chat__tags-title">인기있는 오픈채팅방</span>
-          <ul class="open-chat__tags">
-            <li class="open-chat__tag">
-              <button type="button">헬스</button>
-            </li>
-            <li class="open-chat__tag">
-              <button type="button">소통방</button>
-            </li>
-            <li class="open-chat__tag">
-              <button type="button">서울</button>
-            </li>
-            <li class="open-chat__tag">
-              <button type="button">카톡친구</button>
-            </li>
-            <li class="open-chat__tag open-chat__tag--on">
-              <button type="button">2030</button>
-            </li>
-            <li class="open-chat__tag">
-              <button type="button">캠핑</button>
-            </li>
-            <li class="open-chat__tag">
-              <button type="button">랜선친구</button>
-            </li>
-            <li class="open-chat__tag">
-              <button type="button">BTS</button>
-            </li>
-            <li class="open-chat__tag">
-              <button type="button">수다</button>
-            </li>
-            <li class="open-chat__tag">
-              <button type="button">포트폴리오</button>
-            </li>
-          </ul>
-          <ul class="open-chat__list">
-            <li class="open-chat__item">
-              <div class="open-chat__text">
-                <span class="open-chat__title">2030등산모임</span>
-                <span class="open-chat__intro">#등산#전국#2030#운동#취미#명산#하이킹#친목#등린이</span>
-                <div class="open-chat__info">
-                  <span class="open-chat__num">122명</span>
-                  <span class="open-chat__active">방금 대화</span>
-                </div>
-              </div>
-              <div class="open-chat__img">
-                <img src="images/mountain.jpg">
-              </div>
-            </li>
-            <li class="open-chat__item">
-              <div class="open-chat__text">
-                <span class="open-chat__title">(서울/경기)20대취미밴드 합주해요</span>
-                <span class="open-chat__intro">#서울#경기#음악#아마추어밴드#취미#합주#밴드#공연</span>
-                <div class="open-chat__info">
-                  <span class="open-chat__num">60명</span>
-                </div>
-              </div>
-              <div class="open-chat__img">
-                <img src="images/band.jpg">
-              </div>
-            </li>
-          </ul>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - TalkyTalky</title>
+  </head>
+  <body>
+    <div class="wrap find-wrap">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <!-- <span>No Service</span> -->
+          <span>18:43</span>
+        </div>
+        <!-- <div class="status-bar__column"></div> -->
+        <div class="status-bar__column">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full fa-lg"></i>
+          <!-- <i class="fas fa-bolt"></i> -->
         </div>
       </div>
-    </div>
+      <header class="screen-header">
+        <h1 class="header__title">Find</h1>
+        <ul class="header__util">
+          <li>
+            <button type="button" class="header__btn-util btn-util__search">
+              <i class="fas fa-search fa-lg"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header__btn-util btn-util__setting">
+              <i class="fas fa-cog fa-lg"></i>
+            </button>
+          </li>
+        </ul>
+      </header>
+      <div class="contents">
+        <div class="scroll-wrap">
+          <ul class="find-menu">
+            <li class="find-menu__item">
+              <a href="#">
+                <i class="fas fa-qrcode fa-lg"></i>
+                <span>QR Code</span>
+              </a>
+            </li>
+            <li class="find-menu__item">
+              <a href="#">
+                <i class="far fa-address-book fa-lg"></i>
+                <span>Add by Contacts</span>
+              </a>
+            </li>
+            <li class="find-menu__item">
+              <a href="#">
+                <i class="fas fa-fingerprint fa-lg"></i>
+                <span>Add by ID</span>
+              </a>
+            </li>
+            <li class="find-menu__item">
+              <a href="#">
+                <i class="far fa-envelope fa-lg"></i>
+                <span>Invite</span>
+              </a>
+            </li>
+          </ul>
+          <div class="open-chat">
+            <span class="open-chat__tags-title">인기있는 오픈채팅방</span>
+            <ul class="open-chat__tags">
+              <li class="open-chat__tag">
+                <button type="button">헬스</button>
+              </li>
+              <li class="open-chat__tag">
+                <button type="button">소통방</button>
+              </li>
+              <li class="open-chat__tag">
+                <button type="button">서울</button>
+              </li>
+              <li class="open-chat__tag">
+                <button type="button">카톡친구</button>
+              </li>
+              <li class="open-chat__tag open-chat__tag--on">
+                <button type="button">2030</button>
+              </li>
+              <li class="open-chat__tag">
+                <button type="button">캠핑</button>
+              </li>
+              <li class="open-chat__tag">
+                <button type="button">랜선친구</button>
+              </li>
+              <li class="open-chat__tag">
+                <button type="button">BTS</button>
+              </li>
+              <li class="open-chat__tag">
+                <button type="button">수다</button>
+              </li>
+              <li class="open-chat__tag">
+                <button type="button">포트폴리오</button>
+              </li>
+            </ul>
+            <ul class="open-chat__list">
+              <li class="open-chat__item">
+                <div class="open-chat__text">
+                  <span class="open-chat__title">2030등산모임</span>
+                  <span class="open-chat__intro"
+                    >#등산#전국#2030#운동#취미#명산#하이킹#친목#등린이</span
+                  >
+                  <div class="open-chat__info">
+                    <span class="open-chat__num">122명</span>
+                    <span class="open-chat__active">방금 대화</span>
+                  </div>
+                </div>
+                <div class="open-chat__img">
+                  <img src="images/mountain.jpg" />
+                </div>
+              </li>
+              <li class="open-chat__item">
+                <div class="open-chat__text">
+                  <span class="open-chat__title"
+                    >(서울/경기)20대취미밴드 합주해요</span
+                  >
+                  <span class="open-chat__intro"
+                    >#서울#경기#음악#아마추어밴드#취미#합주#밴드#공연</span
+                  >
+                  <div class="open-chat__info">
+                    <span class="open-chat__num">60명</span>
+                  </div>
+                </div>
+                <div class="open-chat__img">
+                  <img src="images/band.jpg" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html"><i class="fas fa-user fa-lg"></i></a>
-        </li>
-        <li class="nav__btn nav__btn--msg">
-          <a class="nav__link" href="chats.html"><i class="fas fa-comment fa-lg"></i></a>
-        </li>
-        <li class="nav__btn nav__btn--on">
-          <a class="nav__link" href="find.html"><i class="fas fa-search fa-lg"></i></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-lg"></i></a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <script script src="https://kit.fontawesome.com/6478f529f2.js"
-  crossorigin="anonymous"></script>
-</body>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__btn">
+            <a class="nav__link" href="friends.html"
+              ><i class="fas fa-user fa-lg"></i
+            ></a>
+          </li>
+          <li class="nav__btn nav__btn--msg">
+            <a class="nav__link" href="chats.html"
+              ><i class="fas fa-comment fa-lg"></i
+            ></a>
+          </li>
+          <li class="nav__btn nav__btn--on">
+            <a class="nav__link" href="find.html"
+              ><i class="fas fa-search fa-lg"></i
+            ></a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="more.html"
+              ><i class="fas fa-ellipsis-h fa-lg"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/642e975ea7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
